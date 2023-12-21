@@ -1,0 +1,16 @@
+from .add_complaint_type import add_complaint_type_bp
+from .add_complaint import add_complaint_bp
+from .update_complaint import update_complaint_bp
+from .assign_complaint import assign_complaint_bp
+from .complete_complaint import complete_complaint_bp
+from .done_complaint import done_complaint_bp
+from .view_staff_complaints import view_staff_complaints_bp
+
+complaints_router_list = []
+complaints_router_list.append(add_complaint_type_bp)
+complaints_router_list.append(add_complaint_bp)
+complaints_router_list.append(update_complaint_bp)
+complaints_router_list.append(assign_complaint_bp)
+complaints_router_list.append(complete_complaint_bp)
+complaints_router_list.append(done_complaint_bp)
+complaints_router_list.append(view_staff_complaints_bp)
