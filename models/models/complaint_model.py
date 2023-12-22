@@ -9,7 +9,7 @@ class Complaint(db.Model):
     description: Mapped[str] = mapped_column(sqlalchemy.Text, nullable=False)
     complaint_type_id: Mapped[int] = mapped_column(sqlalchemy.ForeignKey("complaint_type.id"))
     complaint_status_id: Mapped[int] = mapped_column(sqlalchemy.ForeignKey("complaint_status.id"))
-    assignee_id: Mapped[int] = mapped_column(sqlalchemy.ForeignKey("user.id"), nullable=True),
+    assignee_id: Mapped[int] = mapped_column(sqlalchemy.ForeignKey("user.id"), nullable=True)
     file_url: Mapped[str] = mapped_column(sqlalchemy.Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(sqlalchemy.DateTime(timezone=True), server_default=sqlalchemy.sql.func.now())
 
