@@ -1,6 +1,6 @@
 # Complaint Management System
 
-This is a complaint management system. In this project I use:
+This is the advanced version of complaint management system. Its Basic Project without ORM and migration can be found at https://github.com/muhammadhuzaifakhan1133/flask_fifth_assignment. In this project I use:
 1. **flask** [for Restful APIs]
 2. **flask-sqlalchemy** [for ORM]
 3. **alembic** [for migration]
